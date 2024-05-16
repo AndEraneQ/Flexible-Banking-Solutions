@@ -1,0 +1,99 @@
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+            <link rel="stylesheet" href="css/main.css">
+            <script src="https://kit.fontawesome.com/44dbd555de.js" crossorigin="anonymous"></script>
+            <title>Dashboard</title>
+        </head>
+
+        <body>
+            <!-- Main Page Header -->
+            <header class="main-page-header mb-3 bg-primary">
+                <!-- Container -->
+                <div class="container d-flex align-items-center">
+                    <!-- Company Name -->
+                    <div class="company-name">
+                        Easy-way Bank
+                    </div>
+                    <!-- Company Name -->
+
+                    <!-- Navigation -->
+                    <nav class="navigation">
+                        <li><a href="">Dashboard</a></li>
+                        <li><a href="">Payment</a></li>
+                        <li><a href="">Transaction History</a></li>
+                    </nav>
+                    <!-- End Of Navigation -->
+
+                    <!-- Display Name -->
+                    <div class="display-name ms-auto">
+                        <i class="fa fa-circle text-success me-2"></i> Welcome: <span>John Doe</span>
+                    </div>
+                    <!-- End Of Display Name -->
+
+                    <!-- Log out button -->
+                    <a href="" class="btn btn-sm ms-2">
+                        <i class="fa fa-sign-out"></i> Sign out
+                    </a>
+                    <!-- End Of Log out button -->
+                </div>
+                <!-- End Of Container -->
+            </header>
+            <!-- Main Page Header -->
+
+            <!-- Start of Transact OffCanvas -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <!-- Offcanvas Transact Body -->
+            <div class="offcanvas-body">
+                Transaction from container
+            </div>
+            <!-- End Of Transact Body  -->
+        </div>
+        <!-- End of Transact OffCanvas -->
+
+        <!-- Start of Right Side Offcanvas -->
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- Offcandas Body -->
+            <div class="offcanvas-body">
+                Accounts from container
+            </div>
+            <!-- End of Offcandas Body -->
+        </div>
+        <!-- End Of Right Side OffCanvas -->
+
+        <!-- Container -->
+        <div class="container d-flex">
+            <!--  -->
+            <button id="add-account-btn" class="btn btn-lg shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                <i class="fa fa-credit-card me-2"></i>Add New Account
+            </button>
+            <!-- Transaction button -->
+            <button id="transact-btn" class="btn btn-lg ms-auto shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa fa-wallet me-2"></i>Transact
+            </button>
+            <!-- End Of Transaction button -->
+
+                
+
+        </div>
+        <!-- End of Container -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
