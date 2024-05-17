@@ -47,7 +47,7 @@ body{
 }
 
 /* Transact Button */
-#transact-btn{
+.transact-btn{
     background-color: #FFB114;
     border: 1px solid #8a867d;
     color: white;
